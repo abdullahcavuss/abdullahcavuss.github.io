@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="-1 -1 26 26">
+<style>
+    path{
+  stroke:  none;
+  fill: black;
+  stroke-dasharray: 2300;
+  opacity: 100;
+  animation: animate 2s cubic-bezier(.61,.17,.46,.93);
+}
+@keyframes animate{
+  0%{
+    oppacity:0;
+    fill:none;
+    stroke: none;
+    stroke-dashoffset: 2300;
+  }
+  10%{
+    opacity: 20;
+    fill: none;
+    stroke: black;
+    stroke-dashoffset: 2300;
+  }
+  30%{
+    opacity: 50;
+    fill: none;
+    stroke: black;
+    stroke-dashoffset: 2300;
+  }
+  90%{
+    fill: none;
+  }
+  100%{
+    opacity: 100;
+    stroke: black;
+    fill: black;
+    stroke-dashoffset: 0;
+  }
+}
+  </style>
+<path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>

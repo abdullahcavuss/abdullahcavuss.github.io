@@ -1,0 +1,121 @@
+html{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body{
+  margin: 0;
+  padding: 0;
+  width: 99%;
+  text-align: center;
+  font-family: 'Autography',serif;
+  font-weight: 600;
+  font-size: 2em;
+  background: url("../img/BG.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  height: 100vh;
+  display: table;
+}
+.footer {
+  font-family: fantasy;
+  position:absolute ;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.wrapper{
+  position: absolute;
+  top: 40%;
+  left:20%;
+  transform: translate(-50%,-50%);
+  width: 30%;
+}
+.bio{
+  position: absolute;
+  top: 40%;
+  left:70%;
+  transform: translate(-50%,-50%);
+  width: 70%;
+}
+path{
+  stroke:  black;
+  fill: black;
+  stroke-dasharray: 2300;
+  opacity: 100;
+  animation: animate 5s cubic-bezier(.61,.17,.46,.93);
+}
+
+p {
+  width: 81ch;
+  text-align: left;
+  font-size: 1.3em;
+  animation: type 10s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+del {
+  text-decoration-color: red;
+}
+
+ins {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: red;
+  position:absolute;
+  transform:rotate(-10deg);
+  margin-left: -20px;
+  margin-top: -40px;
+}
+
+@keyframes animate{
+  0%{
+    oppacity:0;
+    fill:none;
+    stroke: none;
+    stroke-dashoffset: 2300;
+  }
+  10%{
+    opacity: 20;
+    fill: none;
+    stroke: black;
+    stroke-dashoffset: 2300;
+  }
+  30%{
+    opacity: 50;
+    fill: none;
+    stroke: black;
+    stroke-dashoffset: 2300;
+  }
+  90%{
+    fill: none;
+  }
+  100%{
+    opacity: 100;
+    stroke: black;
+    fill: black;
+    stroke-dashoffset: 0;
+  }
+}
+.social{
+  margin-right: 9%;
+  animation: animate 2s cubic-bezier(.61,.17,.46,.93);
+}
+@keyframes type{
+  0%{
+    width: 0ch;
+  }
+  100%{
+    width: 81ch;
+  }
+}
+
+@font-face {
+  font-family: 'Autography';
+  src:local('Autography'), url("../fonts/Notera_PersonalUseOnly.ttf") format("truetype");
+}
+

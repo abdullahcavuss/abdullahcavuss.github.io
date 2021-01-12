@@ -12,7 +12,7 @@ body{
   font-family: 'Autography',serif;
   font-weight: 600;
   font-size: 2em;
-  background: url("../img/BG.jpg") no-repeat 50% 50%;
+  background-color: #c7bd87;
   background-size: cover;
   height: 100vh;
   display: table;
